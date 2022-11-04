@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import model.Produto;
-import repository.ProdutoRepository;
+import repository.ProdutoRepository_old;
 
 @Service
 public class ProdutoService {
 
     @Autowired            //-> fornece controle sobre onde e como a ligação entre os beans deve ser realizada / para marcar os pontos de injeção dentro da sua classe.
-	private ProdutoRepository produtoRepository;
+	private ProdutoRepository_old produtoRepository;
     
     // Metodo para retornar uma lista de produtos.
     
